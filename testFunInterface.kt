@@ -1,0 +1,4 @@
+
+fun interface Test {
+    fun
+}
