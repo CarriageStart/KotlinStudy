@@ -79,6 +79,18 @@ class Name : Extension(Parameters) {
 
     private lateinit val privatePropery2; // => Not equal to null
     private lateinit var privatePropery3; // => Not equal to null
+
+
+    * Operation overloading
+    operator fun plus(b: Price): Price { // A + B
+        return Price(value + b.value)
+    }
+    operator fun get(num: Int): Int { // A[num: Int]
+        return value
+    }
+    operator fun set(num: Int, value: Int) { // A[num: Int] = value
+        this.value = value
+    }
 }
 
 * Open class (Class that is inheritable : "final" as default)
