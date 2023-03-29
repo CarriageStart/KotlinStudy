@@ -52,6 +52,8 @@
         input.length
     }
 
+- "varargs" as args
+
 */
 
 fun main() {
